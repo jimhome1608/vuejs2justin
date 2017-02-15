@@ -14,8 +14,8 @@ export default {
     return {
       inspections: [],   // 从服务器来的 ofi 数据
       choosenDate: null,
-      baseUrl: 'http://www.multilink.com.au/wip/weblink/index.php/',
-      //baseUrl: 'http://www.multilink.com.au/webmultilink/index.php/',
+      // baseUrl: 'http://www.multilink.com.au/wip/weblink/index.php/',
+      baseUrl: 'http://www.multilink.com.au/webmultilink/index.php/',
       stock: null,
       isDocumentReady: false,
       emailBody: '',

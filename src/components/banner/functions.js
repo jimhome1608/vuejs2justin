@@ -18,8 +18,8 @@ export default {
       additions_to_email: '',
       additions_to_sms: '',
       isOfiSentOK: false,
-      baseUrl: 'http://www.multilink.com.au/wip/weblink/index.php/'
-     // baseUrl: 'http://www.multilink.com.au/webmultilink/index.php/'
+        // baseUrl: 'http://www.multilink.com.au/wip/weblink/index.php/'
+      baseUrl: 'http://www.multilink.com.au/webmultilink/index.php/'
     };
   },
   computed: {
