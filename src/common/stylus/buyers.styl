@@ -1,0 +1,61 @@
+.wm-buyers-listing{
+  #listContainer{
+    position relative
+    height auto
+    }
+  }
+  .ofi-cards-wrap{
+    padding 10px
+    .ofi-card{
+      display block
+      margin-bottom 20px
+      margin-right 12px
+      padding 10px
+      border 1px solid color-light-grey
+      border-radius 6px
+      width 38%
+      min-height 34px
+      float left
+      .content{
+        p{
+          line-height 28px
+          &.name{
+            font-size 18px
+          }
+          &.email, &.phone{
+            font-size 15px
+            a{
+              color color-dark
+            }
+          }
+        }
+      }
+    }
+}
+
+#wm-buyers-footer-button{
+  position fixed
+  bottom 0px
+  width 100%
+  .content{
+    .bottom-btn{
+      display block
+      width 100%
+      margin 0
+      padding 0
+      border none
+      line-height 40px
+      font-size 18px
+      color color-dark-white
+      &:active{
+        opacity 0.8  // 为了点击的效果
+      }
+    }
+    .add-new-btn{
+      background-color color-green
+    }
+    .done-btn{
+      background-color color-black
+    }
+  }
+}
