@@ -18,7 +18,8 @@ export default {
       additions_to_email: '',
       additions_to_sms: '',
       isOfiSentOK: false,
-      baseUrl: 'http://www.multilink.com.au/webmultilink/index.php/'
+      baseUrl: 'http://www.multilink.com.au/wip/weblink/index.php/'
+     // baseUrl: 'http://www.multilink.com.au/webmultilink/index.php/'
     };
   },
   computed: {
@@ -73,7 +74,7 @@ export default {
     },
     // 计算有多少人want sect32
     _countRds: function() {
-      return this._getRds().length;
+      return this._getRds();
     },
     // 找出有多少人want sect32 并返回数组对象
     _getRds: function () {
@@ -81,12 +82,12 @@ export default {
       let ofiDateInDdmmyyyy = this.transformDataString(this.inspectionDateValueInStringFormat);
       // console.log(ofiDateInDdmmyyyy);
       let idx = 0;
-      let rds = {};
+      let rds = 0;
       for (var item in this.inspections) {
         let key = 'ofi-' + this.officeId + '-' + this.stock.id + '-' + ofiDateInDdmmyyyy + '-' + idx;
         this.inspections[item]['key'] = key;
         if (this.inspections[item].wants_sect32) {
-          rds[key] = this.inspections[item];
+          rds++;
         }
         idx++;
       };
